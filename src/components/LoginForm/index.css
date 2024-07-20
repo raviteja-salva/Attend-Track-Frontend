@@ -9,6 +9,11 @@
   margin: auto;
 }
 
+.login-heading {
+  color: #0b69ff;
+  font-family: 'Roboto';
+}
+
 @media screen and (min-width: 992px) {
   .login-form-container {
     flex-direction: row;
@@ -22,7 +27,7 @@
   margin-bottom: 35px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 575px) {
   .login-website-logo-mobile-image {
     display: none;
   }
@@ -45,7 +50,7 @@
   width: 185px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 576px) {
   .login-website-logo-desktop-image {
     display: none;
   }
@@ -129,7 +134,21 @@
   margin-top: 3px;
   margin-bottom: 0px;
   font-family: 'Roboto';
-  font-size: 12px;
   line-height: 16px;
   color: #ff0b37;
 }
+
+/* 
+import {Redirect, Route} from 'react-router-dom'
+import Cookie from 'js-cookie'
+
+const ProtectedRoute = props => {
+  const token = Cookie.get('jwt_token')
+  if (token === undefined) {
+    return <Redirect to="/login" />
+  }
+  return <Route {...props} />
+}
+
+export default ProtectedRoute
+*/

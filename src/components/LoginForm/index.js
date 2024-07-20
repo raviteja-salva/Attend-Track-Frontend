@@ -96,8 +96,16 @@ class LoginForm extends Component {
     }
     return (
       <div className="login-form-container">
+        <img
+          src="https://res.cloudinary.com/dw5uzflen/image/upload/v1721456681/6216253_mirh9d.jpg"
+          className="login-image"
+        />
+        <img
+          src="https://res.cloudinary.com/dw5uzflen/image/upload/v1721456681/6216253_mirh9d.jpg"
+          className="login-website-logo-mobile-image"
+        />
         <form className="form-container" onSubmit={this.submitForm}>
-          <h1 className="todos-heading">Note Folio</h1>
+          <h1 className="login-heading">Attend Track</h1>
           <div className="input-container">{this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
           <button type="submit" className="login-button">
